@@ -461,10 +461,4 @@ Good future improvements could include:
 
 ---
 
-## License / 许可
 
-当前仓库中未看到明确的开源许可证文件。
-如需开源分发，建议补充 `LICENSE`。
-
-No explicit open-source license file is currently present in the repository.
-If you plan to distribute this project, consider adding a `LICENSE` file.
