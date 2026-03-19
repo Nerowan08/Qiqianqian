@@ -10,7 +10,7 @@
 ### 1. 项目简介
 
 **Qiqianqian（齐浅浅）** 是一个以“陪伴式对话 + 本地记忆成长”为核心体验的前端应用。
-从当前仓库内容来看，它已经被构建为可直接部署的静态网站：页面入口为 `index.html`，核心逻辑与样式位于 `assets/` 目录中，因此你可以把它理解为一个“开箱即可部署”的 Web 前端成品。
+
 
 这个项目的核心体验包括：
 
@@ -21,7 +21,7 @@
 - 支持导出 / 导入快照，方便迁移个人世界；
 - 支持接入 OpenRouter / OpenAI 兼容接口，也支持无 Key 的本地 mock 浏览模式。
 
-它更像是一个“可成长的 AI 陪伴宇宙”，而不是单纯的聊天窗口。
+它是一个“可成长的 AI 陪伴宇宙”，而不是单纯的聊天窗口。
 
 ---
 
@@ -112,7 +112,6 @@ python3 -m http.server 8000
 http://localhost:8000
 ```
 
-如果只是快速查看页面，也可以直接双击 `index.html`，但更推荐使用本地 HTTP 服务，以避免某些浏览器对模块脚本或资源路径的限制。
 
 #### 3.2 首次进入
 
@@ -161,7 +160,7 @@ http://localhost:8000
 
 ### 4. 技术信息
 
-### 4.1 当前仓库结构
+### 4.1 仓库结构
 
 当前仓库比较精简，主要包括：
 
@@ -172,11 +171,10 @@ http://localhost:8000
 - `CNAME`：自定义域名部署配置；
 - `README.md`：项目说明。
 
-这说明当前仓库更像是**前端构建后的发布目录**，而不是包含源码（如 `src/`、`package.json`）的开发仓库。
 
-#### 4.2 技术栈推断
+#### 4.2 技术栈
 
-从构建产物可以推断本项目大概率使用了以下技术：
+本项目使用了以下技术：
 
 - **React**：JS 打包结果中可见 React 运行时代码；
 - **现代模块化前端构建工具**：从资源命名方式推测，类似 Vite 一类的构建输出；
@@ -184,21 +182,8 @@ http://localhost:8000
 - **Web Crypto API**：用于本地加密 API Key；
 - **Fetch API**：用于调用模型接口与获取模型列表。
 
-#### 4.3 部署方式
+#### 4.3 数据与安全
 
-这是典型的静态站点，可部署到：
-
-- GitHub Pages；
-- Cloudflare Pages；
-- Netlify；
-- Vercel（静态站点模式）；
-- 任意 Nginx / Apache 静态服务器。
-
-如果你已经绑定自定义域名，仓库中的 `CNAME` 文件可直接用于 GitHub Pages 一类的平台。
-
-#### 4.4 数据与安全
-
-项目明显强调“本地保存”能力，因此有几个特点值得注意：
 
 - 你的世界状态主要保存在浏览器本地；
 - API Key 可选择不同保存模式；
@@ -217,28 +202,13 @@ http://localhost:8000
 - 想部署一个静态前端 AI 应用的人；
 - 想保存个人对话世界观和长期陪伴体验的人。
 
----
-
-### 6. 未来可扩展方向
-
-如果后续要继续迭代，比较值得补充的内容包括：
-
-- 补充源码仓库或 `src/` 目录；
-- 增加开发模式说明；
-- 增加环境变量说明；
-- 增加模型提供商适配说明；
-- 增加数据结构与快照格式文档；
-- 增加自动化测试与版本说明；
-- 增加移动端适配与 PWA 说明。
-
----
 
 ## English Version
 
 ### 1. Overview
 
 **Qiqianqian** is an AI companion web app centered on **relationship-style chatting + locally persisted memory growth**.
-Based on the repository contents, this project is currently stored as a **deploy-ready static website**: `index.html` is the entry point, while the application logic and styles live in the `assets/` directory.
+
 
 Core product ideas include:
 
@@ -402,9 +372,9 @@ The current repository is minimal and mainly contains:
 
 This strongly suggests that the repo is a **published frontend build output**, not the original source repository.
 
-#### 4.2 Inferred tech stack
+#### 4.2 tech stack
 
-From the build artifacts, the app appears to use or rely on:
+
 
 - **React**;
 - a **modern frontend bundler** (likely something Vite-like based on asset naming patterns);
