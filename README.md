@@ -165,6 +165,9 @@ http://localhost:8000
 当前仓库比较精简，主要包括：
 
 - `index.html`：站点入口；
+- `trust-controls.html`：记忆控制与删除说明；
+- `lifecycle.html`：分身与群聊生命周期公开说明；
+- `templates.html`：模板与结果分享机制说明；
 - `assets/index-*.js`：前端逻辑打包产物；
 - `assets/index-*.css`：样式打包产物；
 - `favicon.svg`：站点图标；
