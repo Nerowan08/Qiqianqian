@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分身与群聊生命周期说明 | 齐浅浅</title>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; background: #0f1320; color: #e8ecf3; }
+      main { max-width: 860px; margin: 0 auto; padding: 36px 20px 64px; line-height: 1.7; }
+      h1, h2 { line-height: 1.3; }
+      .card { background: #171d2d; border: 1px solid #2a334a; border-radius: 12px; padding: 18px; margin: 14px 0; }
+      code { background: #0d1220; padding: 2px 6px; border-radius: 6px; }
+      a { color: #9bd0ff; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>“核心浅浅 / 分身 / 群聊”生命周期说明（公开版）</h1>
+      <p>为避免“随机生成角色”的不透明体验，产品将“核心浅浅”“分身”“群聊”统一为<strong>有状态生命周期实体</strong>，并按以下状态机执行。</p>
+
+      <h2>1) 分身创建触发（Create）</h2>
+      <div class="card">
+        <ul>
+          <li>当同一主题出现稳定偏好（如 3 次以上被重复强调）；</li>
+          <li>当用户主动请求“需要一个更理性/更执行导向的角色”；</li>
+          <li>当长期目标形成独立上下文（例如学习、工作、情绪支持）。</li>
+        </ul>
+      </div>
+
+      <h2>2) 分身稳定参数（Stable Persona Params）</h2>
+      <div class="card">
+        <p>每个分身至少绑定以下稳定参数：</p>
+        <ul>
+          <li><code>role_tone</code>：角色语气（温柔 / 理性 / 直接等）；</li>
+          <li><code>focus_scope</code>：关注范围（情绪支持 / 目标推进 / 关系复盘）；</li>
+          <li><code>boundary_rule</code>：边界与禁区；</li>
+          <li><code>memory_visibility</code>：可读取的记忆范围；</li>
+          <li><code>activation_level</code>：激活等级（活跃 / 观察 / 冻结）。</li>
+        </ul>
+      </div>
+
+      <h2>3) 群聊创建条件（Group Create）</h2>
+      <div class="card">
+        <ul>
+          <li>至少两个分身与同一目标相关；</li>
+          <li>存在明确协作需求（冲突调和、方案评审、角色分工）；</li>
+          <li>用户主动确认“创建群聊”。</li>
+        </ul>
+      </div>
+
+      <h2>4) 合并 / 冻结机制（Merge / Freeze）</h2>
+      <div class="card">
+        <ul>
+          <li><strong>合并：</strong>两分身参数相似度与历史任务重叠持续升高；</li>
+          <li><strong>冻结：</strong>30 天以上未被调用，或用户手动暂停；</li>
+          <li><strong>解冻：</strong>用户主动唤醒，或出现强匹配场景。</li>
+        </ul>
+      </div>
+
+      <p>该说明用于提高系统可解释性，减少“凭空长出角色”的不确定感。返回主页：<a href="./index.html">齐浅浅</a>。</p>
+    </main>
+  </body>
+</html>
