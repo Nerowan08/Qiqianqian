@@ -166,6 +166,7 @@ http://localhost:8000
 
 - `index.html`：站点入口；
 - `trust-controls.html`：记忆控制与删除说明；
+- `product-roadmap.html`：产品成熟度评估、UI 改进清单与 12 周执行路线图；
 - `lifecycle.html`：分身与群聊生命周期公开说明；
 - `templates.html`：模板与结果分享机制说明；
 - `assets/index-*.js`：前端逻辑打包产物；
